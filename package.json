@@ -1,0 +1,14 @@
+{
+  "name": "idle-clicker-prototype",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
+  "scripts": {
+    "start": "concurrently 'yarn start:server' 'yarn start:client'",
+    "start:server": "cd packages/server && yarn start",
+    "start:client": "cd packages/client && yarn start"
+  }
+}
